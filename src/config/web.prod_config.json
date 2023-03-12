@@ -1,0 +1,4 @@
+{
+    "env": "production",
+    "BASE_URL": "www.test.com"
+}
