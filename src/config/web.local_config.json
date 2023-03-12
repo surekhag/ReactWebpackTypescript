@@ -1,4 +1,4 @@
 {
     "env": "development",
-    "BASE_URL": "www.dev.test.com"
+    "BASE_URL": "www.dev.example.com"
 }

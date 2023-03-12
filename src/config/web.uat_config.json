@@ -1,4 +1,4 @@
 {
     "env": "uat",
-    "BASE_URL": "www.uat.test.com"
+    "BASE_URL": "www.uat.example.com"
 }

@@ -30,7 +30,7 @@ const GetEnvironmentFile = (env: string) => {
 let env = "";
 let environment = "";
 
-process.argv.map((val, index) => {
+process.argv.forEach    ((val, index) => {
     if (val == "--env") {
         env = process.argv[index + 1];
     }

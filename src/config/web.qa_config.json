@@ -1,4 +1,4 @@
 {
     "env": "qa",
-    "BASE_URL": "www.qa.test.com"
+    "BASE_URL": "www.qa.example.com"
 }
