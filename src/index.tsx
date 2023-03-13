@@ -1,14 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import configs from "configData"
+import { createRoot } from 'react-dom/client';
+import configs from "configData";
+
 const App = () => {
-  console.log("configData",configs)
+  console.log("configData : ",configs)
   return (
   <h1>My React and TypeScript App along with Webpack 5!</h1>
   )
 };
 
-ReactDOM.render(
-  <App />,
-  document.getElementById("root")
-);
+const container = document.getElementById('root');
+const root = createRoot(container!); 
+root.render(<App />);
