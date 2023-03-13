@@ -1,4 +1,5 @@
 {
     "env": "qa",
-    "BASE_URL": "www.qa.example.com"
+    "BASE_URL": "www.qa.example.com",
+    "REMOTE_URL": "www.qa.example.com/app/"
 }

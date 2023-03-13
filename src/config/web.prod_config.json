@@ -1,4 +1,5 @@
 {
     "env": "production",
-    "BASE_URL": "www.example.com"
+    "BASE_URL": "www.example.com",
+    "REMOTE_URL": "www.example.com/app/"
 }

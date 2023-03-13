@@ -1,4 +1,5 @@
 {
     "env": "uat",
-    "BASE_URL": "www.uat.example.com"
+    "BASE_URL": "www.uat.example.com",
+    "REMOTE_URL": "www.uat.example.com/app/"
 }
