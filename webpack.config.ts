@@ -6,29 +6,29 @@ import * as webpackDevServer from 'webpack-dev-server';
 const mode = process.argv[5];
 
 const GetEnvironmentFile = (env: string) => {
-    let environment = "";
+    let envFilePath = "";
     switch (env) {
         case "development":
-            environment = "./src/config/web.dev_config.json";
+            envFilePath = "./src/config/web.dev_config.json";
             break;
         case "qa":
-            environment = "./src/config/web.qa_config.json"
+            envFilePath = "./src/config/web.qa_config.json"
             break;
         case "uat":
-            environment = "./src/config/web.uat_config.json"
+            envFilePath = "./src/config/web.uat_config.json"
             break;
         case "production":
-            environment = "./src/config/web.prod_config.json"
+            envFilePath = "./src/config/web.prod_config.json"
             break;
         case "local":
-            environment = "./src/config/web.local_config.json"
+            envFilePath = "./src/config/web.local_config.json"
             break;
     }
-    return environment;
+    return envFilePath;
 }
 
 let env = "";
-let environment = "";
+let envFilePath = "";
 
 process.argv.forEach    ((val, index) => {
     if (val == "--env") {
@@ -37,11 +37,11 @@ process.argv.forEach    ((val, index) => {
 })
 
 if (env)
-    environment = GetEnvironmentFile(env);
-console.log("Env details******", env, environment);
-
+    envFilePath = GetEnvironmentFile(env);
+console.log("Env details : ******", env, envFilePath);
+ 
 const PATHS = {
-    path: path.join(__dirname, environment),
+    path: path.join(__dirname, envFilePath),
 };
 
 const config: Configuration = {
